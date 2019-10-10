@@ -36,7 +36,9 @@ class Arcanist < Formula
 
     bin.install_symlink libexec/"bin/arc" => "arc"
 
+    # the common tab completion script uses bash-compatibility for zsh
     cp libexec/"resources/shell/bash-completion", libexec/"resources/shell/arc-completion.zsh"
+
     bash_completion.install libexec/"resources/shell/bash-completion" => "arc"
     zsh_completion.install libexec/"resources/shell/arc-completion.zsh" => "_arc"
   end
