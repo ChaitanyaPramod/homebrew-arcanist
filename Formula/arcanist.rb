@@ -13,7 +13,6 @@ class Arcanist < Formula
       version "201802151"
     end
   end
- end
 
   head do
     url "https://github.com/phacility/arcanist.git"
