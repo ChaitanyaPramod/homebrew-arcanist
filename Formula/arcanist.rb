@@ -2,6 +2,9 @@ class Arcanist < Formula
   desc "Phabricator Arcanist Tool"
   homepage "https://secure.phabricator.com/book/phabricator/article/arcanist/"
 
+  depends_on "php"
+  depends_on "git"
+
   stable do
     url "https://github.com/wikimedia/arcanist/archive/release/2019-08-22/1.tar.gz"
     sha256 "6a5f726870224da8cf18d904bb96a1a6d8ee25d31c27ff8a0d2093884c243887"
